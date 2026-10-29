@@ -1,0 +1,16 @@
+﻿저장소 : https://github.com/ParkGH02/TICKET-099 (브랜치 midterm-ticket099)
+
+git log --oneline --graph
+* 89a28a3 (HEAD -> midterm-ticket099, origin/midterm-ticket099) 보고서 작성 및 증거 캡처(CSV, 코드 비교) 추가
+* be7a98e Part C 의견3 실행 증명: await 추가 시 다음 접속 대기
+* 96a1c07 TestClient UDP Bind 추가, 퇴장 알림 전송 추가
+* 56bcf0f 퇴장 알림 누락 및 TestClient UDP 수신 중단 - 고치기 전 증거 추가
+* c0fddf5 UdpServer: 받은 바이트 수만큼만 문자열로 변환 (이전 패킷 잔여 데이터 섞임 수정)
+* 7b17f77 UdpServer: 시퀀스 비교를 < 에서 <= 로 수정 (중복 위치 패킷 버리기)
+* 8a093d0 PacketHelper: 요청한 길이만큼 반복 수신하는 ReceiveExactAsync 추가 (분할 패킷 처리)
+* 2a54cb6 PacketHelper: Task.Run(Receive)를 await ReceiveAsync로 변경 (동시 접속 스레드 고갈 수정)
+* 9fc1691 ClientSession: async void HandlePacket을 async Task로 변경 (비정상 패킷에 서버 종료 수정)
+* e68f87e Part A 고치기 전 시나리오 2~7 결과 캡처
+* 3186ee0 Part B 고치기 전 부하 측정 결과 추가
+* a56875b (origin/master, master) 초기 커밋.
+* 7c2b279 .gitattributes 및 .gitignore을(를) 추가합니다.
